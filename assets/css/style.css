@@ -1,0 +1,94 @@
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/assets/images/banner.png) top center / cover no-repeat;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+.header-navbar-logo {}
+
+.header-navbar-logo-img {
+    width: 150px;
+}
+
+.header-navbar-list {
+    flex: 1;
+    text-align: right;
+}
+
+.header-navbar-list ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 0;
+    margin: 0 12px;
+    position: relative;
+}
+
+.header-navbar-list ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.header-navbar-list ul li::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #f44336;
+    margin: auto;
+    display: block;
+    left: 0;
+    transition: 0.3s;
+}
+
+.header-navbar-list ul li:hover::after {
+    width: 100%;
+}
+
+.header-text-box {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.header-text-box h1 {
+    font-size: 62px;
+}
+
+.header-text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+}
+
+.home-btn {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: transparent;
+    position: relative;
+    transition: 1s;
+}
+
+.header-close,
+.header-menu {
+    display: none;
+}
+
+.home-btn:hover {
+    background-color: #f44336;
+    border: #f44336;
+}
